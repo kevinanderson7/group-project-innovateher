@@ -16,9 +16,9 @@ To see the fully functional site, please visit: [coming soon](www.heroku.com)
 
 ## Screen Shots
 
-![Screenshot](public/Screen1.png)
-![Screenshot](public/Screen2.png)
-![Screenshot](public/Screen3.png)
+![Screenshot](public/screen1.png)
+![Screenshot](public/screen2.png)
+![Screenshot](public/screen3.png)
 
 ### Prerequisites
 
