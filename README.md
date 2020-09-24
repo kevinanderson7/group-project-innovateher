@@ -1,10 +1,10 @@
-# ConnectHER 
-
+# ConnectHER
 
 ## Description
+
 _Duration: 3 Week Sprint_
 
-InnovateHER KC, a nonprofit in Kansas City, MO committed to supporting all womxn, promoting diversity, and advancing its member’s professional goals—came to Prime Digital Academy with a challenge. 
+InnovateHER KC, a nonprofit in Kansas City, MO committed to supporting all womxn, promoting diversity, and advancing its member’s professional goals—came to Prime Digital Academy with a challenge.
 
 Their online presence began on Facebook and has grown to 3,000+ members. As the community has grown, so have its needs. For example, while the group was smaller and the FB Page had less activity, sifting through previous posts for like-minded people and resources wasn’t as inconvenient as it is now. Today, the page is so active that finding a post from an hour ago is a challenge.
 
@@ -14,9 +14,11 @@ Out of this request, ConnectHER, a social networking application tailored to Inn
 
 To see the fully functional site, please visit: [coming soon](www.heroku.com)
 
-## Screen Shot
+## Screen Shots
 
-Coming soon
+![Screenshot](public/Screen1.png)
+![Screenshot](public/Screen2.png)
+![Screenshot](public/Screen3.png)
 
 ### Prerequisites
 
@@ -25,21 +27,20 @@ Link to software that is required to install the app (e.g. node).
 - [Node.js](https://nodejs.org/en/)
 - [Docker](https://www.docker.com/)
 
-
 ## Installation
 
-This version of the project uses Docker to run the development environment. If you haven’t installed [docker](https://www.docker.com/), do so now. 
+This version of the project uses Docker to run the development environment. If you haven’t installed [docker](https://www.docker.com/), do so now.
 
 Clone this repo to your local machine.
 Open the project in the editor of your choice, we use [VS Code](https://code.visualstudio.com/) and run `npm install`.
-In order to access specific functions and API’s you will need to configure a `.env` file. Please see detailed instructions below.*
+In order to access specific functions and API’s you will need to configure a `.env` file. Please see detailed instructions below.\*
 From the project root directory: `docker-compose up --build`
-The development database should populate with the data stored in the `init.sql` and `data.sql` files.**
+The development database should populate with the data stored in the `init.sql` and `data.sql` files.\*\*
 Once the development server has started it should serve a message to indicate the server started successfully.
-In a browser, go to `http://localhost:3000`. You should see the application running. 
+In a browser, go to `http://localhost:3000`. You should see the application running.
 There are user profiles created in the `data.sql` so you may login as one of them or create your own.
 
-*Detailed Instructions for Configuring the .env (Secure Development)
+\*Detailed Instructions for Configuring the .env (Secure Development)
 
 Database name as `DATABASE_NAME`.
 Server session secret: `SERVER_SESSION_SECRET` and this can be equal to a secure password. For help creating a password: [Password Generator](https://passwordsgenerator.net/).
@@ -49,16 +50,17 @@ Airtables API can be accessed at [Airtable](https://airtable.com/). The API Key 
 For AWS S3, configure the `.env` with your account and API Access Key: `AWS_ACCESS_KEY_ID` and your Secret Key as `AWS_SECRET_ACCESS_KEY`.
 Email masking functionality is handled by Nodemailer. This sends secure emails from an account to keep users hidden until choosing to share their contact information. This can be configured in the `.env` file with `NODEMAILER_USERNAME` and `NODEMAILER_PASSWORD`.
 
-**The project is built on [Postgres](https://www.postgresql.org/download/), so you will need to make sure to have that installed. We recommend using Postico to run those queries as that was used to create the queries.
+\*\*The project is built on [Postgres](https://www.postgresql.org/download/), so you will need to make sure to have that installed. We recommend using Postico to run those queries as that was used to create the queries.
 
 ## Usage
+
 Steps:
 
 Note: For testing purposes, test accounts and data are currently initialized with the project upon build. These lines can be removed and are not entirely necessary, but may prove helpful as a tool to show off the application
 
 1. Register and/or login to the application. If you’re creating a new account, you’re directed to the ‘Step 1 - About Me’ tab. Complete the forms on tabs 1-3 by providing the necessary information, and click ‘Submit.’
 
-2. After logging into your account, you see the Landing Page. Note, you can also reach this page by selecting ‘Home’ in the top nav bar. 
+2. After logging into your account, you see the Landing Page. Note, you can also reach this page by selecting ‘Home’ in the top nav bar.
 
 The Landing Page contains a brief summary of your own information and an option to ‘View Profile.’ You can also view and edit your profile information by selecting ‘Profile’ in the top nav bar.
 
@@ -70,11 +72,9 @@ Additionally, the page contains one large button at the very top labeled ‘IHKC
 
 User Story:
 
-The following snippet illustrates how a user will utilize and navigate through the ConnectHER application.
+The following snippet illustrates how a user will utilize and navigate through the ConnectHER application. (0:00 - 5:42).
 
-(https://vimeo.com/460774354) 
-
-
+(https://vimeo.com/460774354)
 
 ## Built With
 
@@ -93,12 +93,8 @@ PostgreSQL
 Docker
 Heroku
 
-## License
-
 ## Acknowledgement
+
 Thanks to [Prime Digital Academy](www.primeacademy.io) who equipped and helped us to make this application a reality.
 A special thank you to Lauren Conaway and the InnovateHER KC team for giving us this opportunity.
 Thank you to the ConnectHER team for all the hard-work and support
-
-## Support
-If you have suggestions or issues, please email me at [kevinmanderson419@gmail.com]
